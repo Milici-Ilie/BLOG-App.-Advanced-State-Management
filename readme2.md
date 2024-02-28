@@ -41,7 +41,12 @@
 > Part 3: Create a stylesheet to style our component
 > Part 4: Export the component so we can use it elsewhere in our project
 > How to upgrade/update the Expo Cli. Terminal: 'npx expo install --fix' ==== 'npm install -g expo@^50.0.8' or 'npm install -g expo-cli'
-> How to inseall the React-navigation: 'npm install @react-navigation/native'
+> How to update/upgrade to the latest SDK version: 'npm install expo@latest' ... or ... install a specific SDK version 'npm install expo@50' ... also need to upgrade the dependencies from bellow 👇
+> How to upgrade/update the dependencies: 'npx expo install --fix'
+> How to install the React-navigation: 'npm install @react-navigation/native'
+> Installing project. Terminal: 'npx create-expo-app blog'=== 'blog' is just a name, can be replaced with any name
+>
+> How to connect the App with GitHub Repository and pass over the 'Reinitialized existing repository' or any other error. This will work to pass over the security systems and assure the GitHub that the path is secure: ===>>> 'git config --global --add safe.directory 'C:/Cursuri IT/React Native Projects/food'' ... need to enter the correct path to you'r project/app
 
 [SRC/SCREEN/ComponentsScreen.js]/[App.js]
 
@@ -301,12 +306,19 @@
              -Very important App
 
 > Installing project. Terminal: 'npx create-expo-app blog'=== 'blog' is just a name, can be replaced with any name
+>
+> When we have a complex App with multiple tasks like: 'create, read, update, delete or destroy' the best way to do this is to use a provider: 'Blog Post Provider', bellow you will find how to call and how to implement/wrap all the content using this Provider
 
 []/[]
 
-                                                                ❗❗❗ 💽💽[DISPLAYING ALL CONTENT]💽💽 ❗❗❗
+    ## ✅II. -Creating the connections
+              -Implementing the useNavigation
+              -How to wrap all the contents inside of Navigator
+              -How to pass data directly from the Parent component to a deeply nested child component
 
-    ## ✅II. subtitlu
+[App.js]/[IndexScreen.js]
+
+                                                                ❗❗❗ 🧩🧩[CONNECTIONS]🧩🧩 ❗❗❗
 
     ## ✅III. subtitlu
 
