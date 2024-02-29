@@ -320,11 +320,18 @@
 
                                                                 ❗❗❗ 🧩🧩[CONNECTIONS]🧩🧩 ❗❗❗
 
-    ## ✅III. subtitlu
+    ## ✅III. -❗❗❗❗❗❗For more details about how to pass data/info from a parent element to a child element please check the course REACT from Jonas Schmedtmann, there you will see how to implement REDUX
 
-    ## ✅IV. subtitlu
+    ## ✅IV. -How to store the data on Json Server
+              -NOTE that this aproach is good only for developping and not for production
+              -Storing data in a server (JSON SERVER)
 
-    ## ✅V. subtitlu
+[]/[]
+
+                                                                ❗❗❗ 🐕‍🦺🐕‍🦺[JSON SERVER]🐕‍🦺🐕‍🦺 ❗❗❗
+
+    ## ✅V. -How to create a server JSON ... check section 13 Data API Async
+            -How to create Custom Express API, section 14
 
     ## ✅VI. subtitlu
 
