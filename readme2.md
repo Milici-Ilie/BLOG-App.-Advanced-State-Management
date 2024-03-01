@@ -333,7 +333,7 @@
     ## ✅V. -How to create a server JSON ... check section 13 Data API Async
             -How to create Custom Express API, section 14
 
-    ## ✅VI. subtitlu
+    ## ✅VI. -For a more complex App/project with Sign In, Sign Out, create account, etc. check the last project from SECTION 15.
 
     ## ✅VII. subtitlu
 
