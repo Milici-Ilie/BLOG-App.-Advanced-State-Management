@@ -175,11 +175,110 @@ myTrueBooleanValue ==> true
 ---jshell> boolean myFalseBooleanValue = false;
 myFalseBooleanValue ==> false
 
-> [JAVA/DOCUMENTATION.IMAGES/Char.Variable.Methods.for.Values]/[JAVA/DOCUMENTATION.IMAGES/How.to.name.the.boolean.variables]
+> How to use String:
 
-                                                           ❗❗❗ 🔗🔗[BOOLEAN & CHAR]🔗🔗 ❗❗❗
+-jshell> String myString = "This is a string";
+myString ==> "This is a string"
 
-    ## ✅IV. subtitlu
+-jshell> myString = "I wish I had \u00241,000,000,00";
+myString ==> "I wish I had $1,000,000,00"
+
+> EXEMPLE for String:
+
+---jshell> {
+...> String numberString = "250.55";
+...> numberString = numberString + "49.45";
+...> System.out.print(numberString);
+...> }
+---250.5549.45
+
+> anoter Exemple:
+
+[[[jshell> double doubleNumber = 120.47; lastStrin = lastStrin + doubleNumber;
+doubleNumber ==> 120.47
+lastStrin ==> "1050120.47"]]]
+
+<> ❗❗❗NOTE❗❗❗ when you want to write multiple statements in Jshell you can do it by separate them with ';', or by opening { ...code ... }
+
+> ❗❗❗NOTE❗❗❗ A String + anything else, gives us a String as a result, concatenating anything after the String as text to the initial String
+
+> [JAVA/DOCUMENTATION.IMAGES/Char.Variable.Methods.for.Values]/[JAVA/DOCUMENTATION.IMAGES/How.to.name.the.boolean.variables]/[JAVA/DOCUMENTATION.IMAGES/All.primitive.data]
+
+                                                                    ❗❗❗ 🔗🔗[BOOLEAN & CHAR]🔗🔗 ❗❗❗
+
+    ## ✅IV. -Operators, Operands and Expressions
+
+> Exemple:
+
+jshell> int result = 1 + 2; // 1 + 2 = 3
+result ==> 3
+
+jshell> int previousResult = result;
+previousResult ==> 3
+
+jshell> result = result -1; // 3 - 1 = 2
+result ==> 2
+
+jshell> System.out.print("previousResult = " + previousResult);
+previousResult = 3
+
+> How to concatenate variables to a String. How to concatenate char + char. ❗❗❗NOTE❗❗❗ when we want to concatenate 2 char's the values of the 'char' will be transformed in the 'uniCode', in our ex: A = 65, and B = 66;
+
+jshell> char firstChar = 'A'; char secondChar = 'B';
+firstChar ==> 'A'
+secondChar ==> 'B'
+
+jshell> System.out.print(firstChar + secondChar);
+131
+
+jshell> System.out.print("" + firstChar + secondChar);
+AB
+
+> ❗❗NOTE❗❗ all the values that are added with a String value get transformed in to Strings
+
+> The Remainder Operator = how much from the right side Operator it fits inside of the left Operator and what is remain is the result
+
+-jshell> result = result % 4; //the remainder of (5 % 3) = 1
+result ==> 1
+
+> How to take decimalls from an Abreviating Operator
+
+jshell> {
+...> int result = 10;
+...> result-=5.5;
+...> System.out.print("Result is " + result);
+...> }
+Result is 4 //this answer is not a decimal, because is an 'integer'
+jshell>
+
+jshell> {
+...> double result = 10;
+...> result-=5.5;
+...> System.out.print("Result is " + result);
+...> }
+Result is 4.5 //here we obtaine a decimal by using the 'double' above
+
+> The multiplier and the divider
+
+jshell> {
+...> double result = 10;
+...> result\*=1.5;
+...> System.out.print("Result is " + result);
+...> }
+Result is 15.0
+jshell>
+
+jshell> {
+...> double result = 10;
+...> result/=1.5;
+...> System.out.print("Result is " + result);
+...> }
+Result is 6.666666666666667
+jshell>
+
+> [JAVA/DOCUMENTATION.IMAGES/The.Remainder.Operator]/[JAVA/DOCUMENTATION.IMAGES/The.abreviating.Operators]
+
+                                                           ❗❗❗ 📬📬[OPERATORS, OPERANDS AND EXPRESSIONS]📬📬 ❗❗❗
 
     ## ✅V. subtitlu
 
