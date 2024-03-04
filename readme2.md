@@ -1,284 +1,315 @@
                                                                               # Cuprins #
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE ====== REACT NATIVE
 
-# ======================================================================---JAVA---=======================================================================
+# 1. Starter Project - Search on GitHUB: 'Starter Project with React Native'
 
-# ======================================================================---JAVA---=======================================================================
+    ## ✅I. -How to prepare React Native
+             -What to install for React Native
+             -How to create variables and apply Styles Sheet on them
+             -How to create 'styles' variable, CSS styles
 
-# ======================================================================---JAVA---=======================================================================
-
-# ======================================================================---JAVA---=======================================================================
-
-# ======================================================================---JAVA---=======================================================================
-
-# 1. BASICS about numbers, decimals and more in JAVA
-
-    ## ✅I. -How to display the numbers: byte,short,int (integer), long
-             -Primitives
-             -Whole numbers, full numbers
-             -How to open 'jshell'. Type in Command: 'jshell'
-
-> With those values, primiteve values we know how much width(store) occupye every primitive (byte[-127, 127], short[-32767, 32767], int[...], long[...])
-> Also note that if we need to find the negative value [Byte.MIN_VALUE], an for positive value [Byte.MAX_VALUE]
-> Also note that we can't have 2 different ecuations in the same statement, we need to separate them by a comma ';'
-> Can be 2 ecuations in the same statement only if they are from the same Primitive value []
-
-> System.out.print("Long Value Range (" + Long.MIN_VALUE + " to " + Long.MAX_VAL ")" );
-> =======>>>Long Value Range (-9223372036854775808 to 9223372036854775807)
-
-> long myLongValue = 100L;//The L is used to let Java know that this value must be included in the 'long' contion because it'a very large number
-> =========>>>>myLongValue ==> 100
+> 0.Zero base, install on the mobile the app Expo Go from store, it's a symbol black-white the logo of app. Works for both IOS and Android
+> 1.First before starting the projects. Terminal: => 'npm install --legacy-peer-deps'
+> 2.Terminal: 'npm start' ==> This opens the React Native bundler, this will get our code ready to ran on a mobile device
+> s pentru a trece la build-ul de dezvoltare.
+> a pentru a deschide aplicația pe Android.
+> w pentru a deschide aplicația într-un browser web.
+> j pentru a deschide debugger-ul.
+> r pentru a reîncărca aplicația.
+> m pentru a comuta meniul Expo.
+> o pentru a deschide codul proiectului în editorul tău.
 >
-> byte firstByteValue = Byte.MAX_VALUE;
-> ========>>>>firstByteValue ==> 127
+> 3. If the application is not supporting the web and is not auttomatically start a web page in the browser after the previos Terminal: 'npm start', then install this ❗❗❗'npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0'
+>    Like wise for this demand: 'npx expo install @expo/webpack-config@^19.0.0'
 >
-> short secondShortValue = Short.MAX_VALUE;
-> ========>>>>secondShortValue ==> 32767
->
-> int thirdIntValue = Integer.MAX*VALUE;
-> thirdIntValue ==> 2147483647
-> CHALLENGE
-> long lastValueLong = (long) 50.000 + 10 * (firstByteValue + secondShortValue + intValue); --- ORRRR --- long lastValueLong = 50.000L + 10L \* (firstByteValue + secondShortValue + ntValue);
-> ❗❗❗❗❗ NOTE When we want to convert numbers to Long values we can add a 'suffix' at the end of the number like we see in the second exemple to make the ecuation work. The suffix is 'L' for Long
+> ----REACT COMPONENT FILE------
+> Part 1: Import libraries we need to create components
+> Part 2: Create a component - a function that resturns some 'JSX'
+> Part 3: Create a stylesheet to style our component
+> Part 4: Export the component so we can use it elsewhere in our project
+> How to upgrade/update the Expo Cli. Terminal: 'npx expo install --fix' ==== 'npm install -g expo@^50.0.8'
 
-[Primitive.byte,short,int,long.IMG/documentation.IMAGES]/[Size.of.Primitive.Types.and.Width//documentation.IMAGES]/[Java's.Primitive.Types(whole.number,real.number,single.character,boolean.value//documentation.IMAGES)]
+[SRC/SCREEN/ComponentsScreen.js]/[App.js]
 
-                                                                ❗❗❗ 🌳🌳[DECIMALS]🌳🌳 ❗❗❗
+                                                                ❗❗❗ 👶👶[FIRST STEPS]👶👶 ❗❗❗
 
-    ## ✅II. -Primitives. Float and Double Primitives;
-              -Fractional parts
-              -Numbers with decimals
+    ## ✅II. -Showing a custom component
+              -Importing a file/page
+              -How to connect pages
 
-> Floating-point Number Data Types: 'float', 'double'
->
-> The FLOAT value/number:
-> ----System.out.print("Float Value Range(" + Float.MIN_VALUE + " to " + Float.MAX_VALUE + ")");----
->
-> > > > > > > > > > > > > Float Value Range(1.4E-45 to 3.4028235E38)
+[SRC/SCREEN/HomeScreen.js]/[]
 
-> The DOUBLE value/number:
-> ----System.out.print("Double Value Range(" + Double.MIN_VALUE + " to " + Double.MAX_VALUE + ")");
->
-> > > > > > > > > > > > > > > > > > > > > > > > Double Value Range(4.9E-324 to 1.7976931348623157E308)
+                                                           ❗❗❗ 🍮🍮[CUSTOM COMPONENTS]🍮🍮 ❗❗❗
 
-> EXEMPLES:
+    ## ✅III. -Building lists
+               -How to build lists in React Native
+               -How to add the unique 'key' to our objects/array
+               -How to create a Horizontal Scrooling
 
-jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue=5;
+> Horizontal scrooling: 'horizontal', check the 'ListScreen.js' file, the 'return(<Flatlist horizontal/>)'
+> How to disable the ScroolBar if you dont want to see it: 'showsHorizontalScrollIndicator={false}'
+> To create a list in React Native we need to use 'FlatList', check the 'ListScreen.js' file
 
-myIntValue ==> 5
-myFloatValue ==> 5.0
-myDoubleValue ==> 5.0
+[SRC/SCREENS/ListScreen.js]/[App.js]
 
-> ❗❗❗❗❗ NOTE. Any number with a decimal is a double in JAVA. So, 10.5 is a double by default in Java
-> ❗❗❗❗❗ NOTE. Same as the Long primitive from the above lesson, here we also need to add a 'suffix' at the end of our value. For 'myFloatValue' = 5.25F, and for 'myDoubleValue' = 5.25D, otherwise we will get an error. It can work without the 'prefix' only for numbers like: 5, 2, etc, if we will have numbers with decimals we need to add the specific 'preffix'
->
-> How to use 'Casting' and what is it:
-> When we want to convert a decimal number to a whole number we can 'Cast' that number
->
-> > > > > > > > > > > > > > > > > float myOtherFloatValue = (float) 5.35
-> > > > > > > > > > > > > > > > > myOtherFloatValu ==> 5.25
+                                                             ❗❗❗ 📃📃[BUILDING LISTS]📃📃 ❗❗❗
 
-------OR IF WE WANT TO ELIMINATE THE DECIMALS----------
+    ## ✅IV. -How to create Buttons
+              -Buttons Types
+              -How to change between pages using Buttons
 
-> > > > > > > > > double numarDouble = 10.5F;
-> > > > > > > > > int numarIntreg = (int) numarDouble; ---
-> > > > > > > > > -------To eliminate the deimals we need to convert the number to an 'int' value/primitive
+> There are 2 ways of creating a button that connect with another page/file: 1.Button, simple Button. 2. TouchableOpacity: Highly customizable component that can detect a press on just about any kind of element, not necesarly to be a Button, it can be an IMG, or a text, etc.
 
-            ❗❗❗❗❗❗În acest caz, valoarea zecimală 10.5 este convertită la 10 prin eliminarea zecimalelor în timpul procesului de casting.
-            Este important să fii atent la casting, deoarece poate duce la pierderea de informație. De exemplu, când convertești un double la int, partea zecimală este eliminată, iar rezultatul poate fi diferit de ceea ce te-ai aștepta.❗❗❗❗❗❗
+[SRC/SCREEN/HomeScreen.js]/[]
 
-> Precision of the Float and Double comparative with Int
+                                                             ❗❗❗ 🧈🧈[BUTTON TYPES]🧈🧈 ❗❗❗
 
-jshell> myIntValue = 5/2;
-myIntValue ==> 2
+    ## ✅V. -How to navigate between files/pages
+             -How to navigate when the use click the Buttons
+             -Components reuse with Props
 
-jshell> myFloatValue = 5f / 2f;
-myFloatValue ==> 2.5
+> To navigate between files we need to pass the 'props' in our files to make effect
 
-jshell> myDoubleValue = 5d / 2d;
-myDoubleValue ==> 2.5
+[SRC/SCREEN/HomeScreen.js]/[and.all.the.connection.files]
 
-> another EXEMPLE
+                                                                ❗❗❗ 🧭🧭[NAVIGATION]🧭🧭 ❗❗❗
 
-jshell> myIntValue = 5 / 3;
-myIntValue ==> 1
+    ## ✅VI. -How to build different components
+              -How to add IMG's
+              -Parent-Child Relationships
+              -How to pass 'props' between components/duplicated components
 
-jshell> myFloatValue = 5f / 3f;
-myFloatValue ==> 1.6666666
+[SRC/COMPONENTS/ImageDetail.js]/[SRC/SCREENS/ImageScreen.js]
 
-jshell> myDoubleValue = 5d / 3d;
-myDoubleValue ==> 1.6666666666666667
+                                                                ❗❗❗ 🌠🌠[DIFFERENT COMPONENTS]🌠🌠 ❗❗❗
 
-jshell> myDoubleValue = 5.00 / 3.00;
-myDoubleValue ==> 1.6666666666666667
+    ## ✅VII. -How to display Images
+               -Displaying IMG's
 
-> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > ❗❗❗❗❗❗ IMPORTANT NOTE ...ALWAYS USE ONLY -----DOUBLE NUMBERS------ ❗❗❗❗❗❗❗ <<<<<<<<>>>>>>>>
+[SRC/COMPONENTS/ImageDetail.js]/[SRC/SCREENS/ImageScreen.js]
 
-> another EXEMPLE: How to transform Pounds to Kilogram >>>
+                                                                ❗❗❗ 🗻🗻[DISPLAYING IMAGES]🗻🗻 ❗❗❗
 
-jshell> double numberPoun = 0.45359237d;
+    ## ✅VIII. -State in Components
+                -How to create a counter
+                -How to use State, rerender state data
+                -How to add random color when pressing a button/ rerender function
 
-jshell> double myPoundNumbers = 200;
-myPoundNumbers ==> 200.0
+> There are 2 types of systems: 1. Props (System to pass data from a parent component to a child component). 2. State (System to track a piece of data that will change over time. If that data changes, our app will 'rerender')
 
-jshell> double convertedToKilograms = myPoundNumbers \* 0.45359237d;
-convertedToKilograms ==> 90.718474
+[SRC/SCREENS/CounterScreen.js]/[App.js]/[SRC/SCREENS/HomeScreen.js]/[SRC/SCREENS/ColorScreen.js]
+
+                                                                ❗❗❗ 🗽🗽[COUNTER-PROPS & STATE]🗽🗽 ❗❗❗
+
+    ## ✅IX. -How to make multiple changes/ rerenders/ 3 pieces of state 'useState'
+              -How to change a content conected with multiple choices
+              -How to connect more actions to a single result
+              -How to create a reusable State Variable and passing as a 'props' from the parent file to the children files
+              -Passing Callbacks to Children
+
+> In this small App we want to create 6 Buttons, 2 Buttons for each color (red, green, blue), 1 Button for 'More Red' & 'Less Red', etc for green and blue. When the Buttons are pressed to square/content from bellow will change depending on our actions made on those Buttons
+
+[SRC/SCREENS/SquareScreen.js]/[SRC/COMPONENTS/ColorCounter.js]
+
+                                                                ❗❗❗ 🚼🚼[MULTIPLE RERENDERS]🚼🚼 ❗❗❗
+
+    ## ✅X. -How to create a condition for not going above a limit. For ex: not bellow 0 or above 255
+             -How to create TERNARY OPERATOR
+             How to use 'IF' 'ELSE' statement
+
+[SRC/SCREEN/SquareScreen.js]/[]
+
+                                                                ❗❗❗ 🐢🐢[TERNARY OPERATION]🐢🐢 ❗❗❗
+
+    ## ✅XI. -Implementing REDUCER
+
+> NOTE!!! every time when we need some dynamic changes we use or 'useState' or 'Reducer', on or another to achieve our goal
+> EXERCISE with 'useReducer' at Lesson.61 'Exercise Solution'
+
+[SRC/SCREEN/SquareScreen2.js]/[SRC/SCREEN/CounterScreen]
+
+                                                                       ❗❗❗ 🏮🏮[REDUCER]🏮🏮 ❗❗❗
+
+    ## ✅XII. -How to create an Input text where the User types his name or any string
+               -How to take values from the Input text and display it somewhere else
+               -How to acces the text from the Input Text
+               -How to cummunicate data from a CHILD to a PARENT
+               -Two important PROPS need it for InputText
+               -How to display a text or not depending on the situation, if the condition is TRUE or FALSE we can display or not some content
+
+> The 2 important PROPS: === autoCapitalize="none" ... autoCorrect={false}
+
+[SRC/SCREENS/TextScreen.js]/[]
+
+                                                                       ❗❗❗ 💉💉[INPUT TEXT]💉💉 ❗❗❗
+
+    ## ✅XIII. -How to use Layout
+                -Layout Systems
+                -Box Object Model
+                -Flex Box
+                -Position
+
+> Layout Systems: Box Objext Model (The height/with of an element + the space around it. Use this to affect the positioning of a single element), Flex Box (How some number of sibling elements get laid out inside a parent. Use this to position multiple elements with a common parent), Position (How a single element gets laid our inside of a parent. Use this to override Box Object Model + Flex Box)
 
 []/[]
 
-                                                           ❗❗❗ 👸👸[FLOAT & DOUBLE PRIMITIVES]👸👸 ❗❗❗
+                                                                    ❗❗❗ 🔬🔬[LAYOUT SYSTEM]🔬🔬 ❗❗❗
 
-    ## ✅III. -The char and boolean Primitive Data Types
+# 2. -Restaurant Search App: Find on GitHub: 'Restaurant Search App'
 
-> NOTE . A char can store only a single character. If we compare it to a string witch can store multiple words. Char is used to store just 1 character
-> How to find the unique codes for Symbols like letters, numbers, etc: https://symbl.cc/en/unicode/table/
-> NOTE !!! that every symbol as letter, numbers, etc have a unique code number
+    ## ✅I. -How to install projects in React Native
+             -How to install React Navigation/Native
 
-> char myChar = 'D';
-> ---myChar ==> 'D'
+> Terminal: 'npx create-expo-app food-rn6' === NOTE❗❗❗ 'food-rn6' at the end is just the name of our App, the command itself is 'npx create-expo-app'
+> NREACT NAVIGATION gives the possibility to navigate between multiple pages
 
-> Unicode Symbol for 'D': ==> U+0044 ... OR ... &#68
+<>
+<<<Install React Navigation v6 dependencies>>>
 
---- jshell> char myUnicode = '\u0044';
---- myUnicode ==> 'D'
+> > > > > > > > > > > > npm install @react-navigation/native
 
----jshell> char myDecimalCodeTest = 68;
----myDecimalCodeTest ==> 'D'
+> > > > > > > > > > > > npx expo install react-native-screens react-native-safe-area-context
 
-> ❕❕❕❕❕❕❕❕❕❗❗❗❗ BOOLEAN Primitive Type ❕❕❕❕❕❕❕❕❕❗❗❗❗
->
-> How to name the Boolen variables, just some exemples:
-> -isCutomerOverTwntyOne
-> -isEligibleForDiscount
-> -hasValidLicense
-> -isMarried
-> -hasChildren
->
-> Boolean gives just 2 options: True || False, Yes || No, 1 || 0;
+> > > > > > > > > > > > npm install @react-navigation/stack
 
----jshell> boolean myTrueBooleanValue = true;
-myTrueBooleanValue ==> true
+> > > > > > > > > > > > npx expo install react-native-gesture-handler
 
----jshell> boolean myFalseBooleanValue = false;
-myFalseBooleanValue ==> false
+<<<Install project dependencies:
 
-> How to use String:
+> > > > > > > > > > > > npm install axios
+> > > > > > > > > > > > <>
 
--jshell> String myString = "This is a string";
-myString ==> "This is a string"
+                                                                    ❗❗❗ 🍴🍴[RESTAURANT APP]🍴🍴 ❗❗❗
 
--jshell> myString = "I wish I had \u00241,000,000,00";
-myString ==> "I wish I had $1,000,000,00"
+    ## ✅II. -Assembling a Navigator
 
-> EXEMPLE for String:
+[App.js]/[SRC/SCREEN/SearchScreen.js]
 
----jshell> {
-...> String numberString = "250.55";
-...> numberString = numberString + "49.45";
-...> System.out.print(numberString);
-...> }
----250.5549.45
+                                                                    ❗❗❗ 🍴🍴[Navigator]🍴🍴 ❗❗❗
 
-> anoter Exemple:
+    ## ✅III. -Creating the SearchBar
+               -How to implement React Native Icons
+               -How to import expo/vector-icons
 
-[[[jshell> double doubleNumber = 120.47; lastStrin = lastStrin + doubleNumber;
-doubleNumber ==> 120.47
-lastStrin ==> "1050120.47"]]]
+> Go to the link: 'https://docs.expo.dev/guides/icons/' === 'https://icons.expo.fyi/Index/AntDesign/stepforward'
+> Installing the Expo Vector Icons: 'npx create-expo-app'
 
-<> ❗❗❗NOTE❗❗❗ when you want to write multiple statements in Jshell you can do it by separate them with ';', or by opening { ...code ... }
+[SRC/SCREENS/SearchScreen.js]/[SRC/COMPONENTS/SearchBar.js]
 
-> ❗❗❗NOTE❗❗❗ A String + anything else, gives us a String as a result, concatenating anything after the String as text to the initial String
+                                                                    ❗❗❗ 🔍🔍[SEARCH BAR]🔍🔍 ❗❗❗
 
-> [JAVA/DOCUMENTATION.IMAGES/Char.Variable.Methods.for.Values]/[JAVA/DOCUMENTATION.IMAGES/How.to.name.the.boolean.variables]/[JAVA/DOCUMENTATION.IMAGES/All.primitive.data]
+    ## ✅IV. -How to receive data/info's from the Search Bar
+              -How to use the text from Input Text
 
-                                                                    ❗❗❗ 🔗🔗[BOOLEAN & CHAR]🔗🔗 ❗❗❗
+> To receive data/fetch data we will use 'axios'. Terminal: 'npm install axios', we laso can use the 'fetch' method wich is given by default from React, but 'axios' is much easyer
 
-    ## ✅IV. -Operators, Operands and Expressions
+[SRC/COMPONENTS/SearchBar.js]/[SRC/SCREENS/SearchScreen.js]/[SRC/API/Yelp.js]
 
-> Exemple:
+                                                                    ❗❗❗ 🔤🔤[RECEVEING DATA]🔤🔤 ❗❗❗
 
-jshell> int result = 1 + 2; // 1 + 2 = 3
-result ==> 3
+    ## ✅V. -How to handle Erros
+             -Handling Errors
+             -How to catch Error messages and display them on the screen
 
-jshell> int previousResult = result;
-previousResult ==> 3
+[SRC/SCREENS/SearchScreen.js]/[SRC/HOOKS/useResults.js]
 
-jshell> result = result -1; // 3 - 1 = 2
-result ==> 2
+                                                                    ❗❗❗ 🌋🌋[HANDLING ERRORS]🌋🌋 ❗❗❗
 
-jshell> System.out.print("previousResult = " + previousResult);
-previousResult = 3
+    ## ✅VI. -How to display some results to the User when he first open the App
+              -How to display content from the API by default when the Appp is oppened
 
-> How to concatenate variables to a String. How to concatenate char + char. ❗❗❗NOTE❗❗❗ when we want to concatenate 2 char's the values of the 'char' will be transformed in the 'uniCode', in our ex: A = 65, and B = 66;
+> 'useEffect' - is a HOOK that allows us to render a component just one time when our component is first displayed on the screen
+> useEffect(()=> {}, []); ---> Run the arrow function only when the component is first rendered
+> useEffect(()=> {}, [value]); ---> Run the arrow function only when the component is first rendered, and when the 'value' [] changes, this [value] can be a function or anything else, when this [value] will be activated will automatically call also the 'useEffect()' State
 
-jshell> char firstChar = 'A'; char secondChar = 'B';
-firstChar ==> 'A'
-secondChar ==> 'B'
+[SRC/SCREENS/SearchScreen.js]/[SRC/HOOKS/useResults.js]
 
-jshell> System.out.print(firstChar + secondChar);
-131
+                                                                ❗❗❗ ⛵⛵[DISPLAYING DEFAULT RESULTS]⛵⛵ ❗❗❗
 
-jshell> System.out.print("" + firstChar + secondChar);
-AB
+    ## ✅VII. -Displaying results from the API
+               -Displaying content
+               -How to create a Scroolable List in React Native, check the 'ResultsList.js' file for <FlatList.../>
 
-> ❗❗NOTE❗❗ all the values that are added with a String value get transformed in to Strings
+[SRC/COMPONENTS/ResultsList.js]/[SRC/SCREENS/SearchScreen.js]
 
-> The Remainder Operator = how much from the right side Operator it fits inside of the left Operator and what is remain is the result
+                                                                ❗❗❗ 🎊🎊[DISPLAYING CONTENT FROM API]🎊🎊 ❗❗❗
 
--jshell> result = result % 4; //the remainder of (5 % 3) = 1
-result ==> 1
+    ## ✅VIII. -Displaying only 1 one result
+                -How to show only 1 result from the API
+                -In some App of multiple Restaurants, we want to display at the Top only 1 restarurent/content
 
-> How to take decimalls from an Abreviating Operator
+[ResultsDetails.js]/[]
 
-jshell> {
-...> int result = 10;
-...> result-=5.5;
-...> System.out.print("Result is " + result);
-...> }
-Result is 4 //this answer is not a decimal, because is an 'integer'
-jshell>
+                                                                ❗❗❗ 🍾🍾[SINGLE CONTENT]🍾🍾 ❗❗❗
 
-jshell> {
-...> double result = 10;
-...> result-=5.5;
-...> System.out.print("Result is " + result);
-...> }
-Result is 4.5 //here we obtaine a decimal by using the 'double' above
+    ## ✅IX. -How to display IMG's
+             -How to create the effect of sliding right at the end and coming back
 
-> The multiplier and the divider
+> How to hide the Scroll bar: 'showsHorizontalScrollIndicator={false}'
+> How to Scroll horizontall and vertically when there are to much content, check the 'SearchScreen.js'
 
-jshell> {
-...> double result = 10;
-...> result\*=1.5;
-...> System.out.print("Result is " + result);
-...> }
-Result is 15.0
-jshell>
+[SRC/COMPONENTS/ResultsDetail.js]/[SRC/SCREEN/SearchScreen.js]
 
-jshell> {
-...> double result = 10;
-...> result/=1.5;
-...> System.out.print("Result is " + result);
-...> }
-Result is 6.666666666666667
-jshell>
+                                                                ❗❗❗ 🍧🍧[DISPLAYING IMAGES]🍧🍧 ❗❗❗
 
-> [JAVA/DOCUMENTATION.IMAGES/The.Remainder.Operator]/[JAVA/DOCUMENTATION.IMAGES/The.abreviating.Operators]
+    ## ✅X. -Reminder on Navigation
+             -UseNavigation
+             -Navigating from a Child Component
+             -How to display another page related when the User select some content
+             -How to connect related info page with primary page
+             -Pressing some IMG (for exemple) will display automatically another content related with that IMG
+             -Showing some info's related with the content that we press and upload it from the API
 
-                                                           ❗❗❗ 📬📬[OPERATORS, OPERANDS AND EXPRESSIONS]📬📬 ❗❗❗
+> How to dettect what content the User pressed to know wich info's to upload when is need it
+
+[SRC/SCREENS/ResultsShowScreen.js]/[SRC/COMPONENTS/ResultsList.js]
+
+                                                                ❗❗❗ 🦟🦟[RELATED CONTENTS]🦟🦟 ❗❗❗
+
+    ## ✅XI. -Communicating between screens
+              -How to figure out what data to display when the user tapp on some content/IMG/etc
+              -Displaying the correct content
+
+[SRC/COMPONENTS/ResultsList.js]/[SRC/SCREENS/ResultsShowScreen.js]
+
+                                                                ❗❗❗ 💫💫[COMUNICATING SCREENS]💫💫 ❗❗❗
+
+    ## ✅XII. -How to display all the content at once and not the text first and than the IMG's, etc
+
+[SRC/COMPONENTS/ResultsList.js]/[]
+
+                                                                ❗❗❗ 💽💽[DISPLAYING ALL CONTENT]💽💽 ❗❗❗
+
+# 3. Blog app. Search on GitHub: 'BLOG App. Advanced State Management'
+
+    ## ✅I. -BLOG App
+             -How to create, read, update, delete or destroy elements
+             -Very important App
+
+> Installing project. Terminal: 'npx create-expo-app blog'=== 'blog' is just a name, can be replaced with any name
+
+[]/[]
+
+                                                                ❗❗❗ 💽💽[DISPLAYING ALL CONTENT]💽💽 ❗❗❗
+
+    ## ✅II. subtitlu
+
+    ## ✅III. subtitlu
+
+    ## ✅IV. subtitlu
 
     ## ✅V. subtitlu
 
